@@ -1,5 +1,28 @@
 {
   "devDependencies": {
     "chai": "^4.1.2"
-  }
+  },
+  "name": "node",
+  "description": "TDD\r ## Unit Testing\r Mocha\r Chai for assertions",
+  "version": "1.0.0",
+  "main": "app.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamban69/Node.git"
+  },
+  "author": "thiruekamban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamban69/Node/issues"
+  },
+  "homepage": "https://github.com/kamban69/Node#readme"
 }
