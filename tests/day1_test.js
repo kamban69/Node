@@ -1,6 +1,6 @@
 var chai = require("chai");
 var expect = chai.expect;
-var day1Code = require("./../Day1/day1.js")
+var day1Code = require("../Day1/day1.js")
 
 describe(
     "day1_Func get age", function(){
