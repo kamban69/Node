@@ -1,15 +1,15 @@
 const fs = require("fs");
 
-function HandleFile() {};
-HandleFile.prototype.WriteToFile = function(){
-var originalNote = {title : "first json note", body : "Hello World!"};
-originalNoteString = JSON.stringify(originalNote);
-
-fs.writeFileSync("notes.json", originalNoteString);
+class HandleFile {
+    constructor() { }
+    WriteToFile() {
+        var originalNote = { title: "first json note", body: "Hello World!" };
+        originalNoteString = JSON.stringify(originalNote);
+        fs.writeFileSync("notes.json", originalNoteString);
+    }
+    ReadFromFile() {
+        var notesString = fs.readFileSync("notes.json");
+        return JSON.parse(notesString);
+    }
 }
-HandleFile.prototype.ReadFromFile = function(){
-var notesString = fs.readFileSync("notes.json");
-return JSON.parse(notesString);
-}
-
 module.exports = HandleFile;
